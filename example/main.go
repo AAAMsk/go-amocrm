@@ -1,7 +1,7 @@
 package example
 
 import (
-	"github.com/whatcrm/go-amocrm"
+	"github.com/AAAMsk/go-amocrm"
 )
 
 const (
