@@ -2,7 +2,7 @@ package amocrm
 
 import (
 	"fmt"
-	"github.com/whatcrm/go-amocrm/models"
+	"github.com/AAAMsk/go-amocrm/models"
 )
 
 func NewAPI(clientID, clientSecret, redirectURI string) *API {

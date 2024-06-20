@@ -1,4 +1,4 @@
-module github.com/whatcrm/go-amocrm
+module github.com/AAAMsk/go-amocrm
 
 go 1.19
 

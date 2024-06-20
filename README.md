@@ -15,7 +15,7 @@ To get started with **go-amocrm**, you'll need to do the following:
 - Here's an example of how to install the package:
 
 ```
-go get github.com/whatcrm/go-amocrm
+go get github.com/AAAMsk/go-amocrm
 ```
 
 ## Models
@@ -24,10 +24,10 @@ go get github.com/whatcrm/go-amocrm
 This means you can create your own structs and use them with our **go-amocrm** package, 
 even if you don't want to use every field from amoCRM's entities.
 
-Here's the link to [Models](https://github.com/whatcrm/go-amocrm/models) package and example of how to install the package.
+Here's the link to [Models](https://github.com/AAAMsk/go-amocrm/models) package and example of how to install the package.
 
 ```
-go get github.com/whatcrm/go-amocrm/models
+go get github.com/AAAMsk/go-amocrm/models
 ```
 
 ## Features
@@ -45,5 +45,5 @@ go get github.com/whatcrm/go-amocrm/models
 
 ## Contributors
 
-> **go-amocrm** is maintained by [WhatCRM Organization](https://github.com/whatcrm). 
-> If you'd like to contribute to the project, please reach out to us via [Issues](https://github.com/whatcrm/go-amocrm/issues).
+> **go-amocrm** is maintained by [WhatCRM Organization](https://github.com/AAAMsk). 
+> If you'd like to contribute to the project, please reach out to us via [Issues](https://github.com/AAAMsk/go-amocrm/issues).

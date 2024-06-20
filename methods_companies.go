@@ -1,8 +1,8 @@
 package amocrm
 
 import (
+	"github.com/AAAMsk/go-amocrm/models"
 	"github.com/gofiber/fiber/v2"
-	"github.com/whatcrm/go-amocrm/models"
 )
 
 func (c *Get) Companies(companyID string, params *Params) (out []models.Company, err error) {
