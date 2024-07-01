@@ -17,6 +17,18 @@ const (
 	leadUnsortedSIP = "api/v4/leads/unsorted/sip"
 )
 
+// Users Constants
+// https://www.amocrm.ru/developers/content/crm_platform/users-api#users-list
+const (
+	usersURL = "/api/v4/users"
+)
+
+// Statuses Constants
+// https://www.amocrm.ru/developers/content/crm_platform/leads_pipelines#Список-статусов-воронки-сделок
+const (
+	pipelineStatusesURL = "api/v4/leads/pipelines/{pipeline_id}/statuses"
+)
+
 // Contacts Constants
 const (
 	contactsURL     = "api/v4/contacts"

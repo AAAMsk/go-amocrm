@@ -22,6 +22,8 @@ type Lead struct {
 	CreatedAt int `json:"created_at,omitempty"`
 	// Дата изменения сделки, передается в Unix Timestamp
 	UpdatedAt int `json:"updated_at,omitempty"`
+	// Удалена ли сделка
+	IsDeleted bool `json:"is_deleted,omitempty"`
 	// ID причины отказа
 	//LossReasonID      int    `json:"loss_reason_id"`
 	// ID пользователя, ответственного за сделку
