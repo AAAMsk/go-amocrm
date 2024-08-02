@@ -3,7 +3,49 @@ package amocrm
 import (
 	"github.com/AAAMsk/go-amocrm/models"
 	"github.com/gofiber/fiber/v2"
+	"log"
+	"regexp"
+	"strconv"
 )
+
+func (c *Get) GetContactsByCustomFields(phone string, email string, params *Params) (isFind bool, contact models.Contact, err error) {
+	c.api.log("GetContactsByCustomFields request is started...")
+
+	var out []models.Contact
+	regex := regexp.MustCompile("^(\\+)|[^\\d\\n]")
+	i := 1
+	options := makeRequestOptions{
+		Method:  fiber.MethodGet,
+		BaseURL: contactsURL,
+		In:      nil,
+		Out:     &models.RequestResponse{},
+		Params:  params,
+	}
+
+	for {
+		options.Params.Page = strconv.Itoa(i)
+
+		if err = c.api.makeRequest(options); err != nil {
+			if err.Error() == "No content" {
+				break
+			}
+			log.Println(err)
+			return
+		}
+
+		out = options.Out.(*models.RequestResponse).Embedded.Contacts
+		for _, value := range out {
+			for _, item := range value.CustomFieldsValues {
+				if (item.FieldCode == "PHONE" && regex.ReplaceAllString(item.Values[0].Value, "") == phone) || (item.FieldCode == "EMAIL" && item.Values[0].Value == email) {
+					return true, value, nil
+				}
+			}
+		}
+
+		i++
+	}
+	return false, contact, nil
+}
 
 func (c *Get) Contacts(contactID string, params *Params) (out []models.Contact, err error) {
 	c.api.log("GetContacts request is started...")
