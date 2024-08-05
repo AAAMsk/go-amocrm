@@ -1,0 +1,69 @@
+{
+	"id": 13613415,
+	"name": "Валентина Ступенькова",
+	"first_name": "Валентина",
+	"last_name": "Ступенькова",
+	"group_id": 504854,
+	"responsible_user_id": 10280294,
+	"created_at": 1700640727,
+	"updated_at": 1700640729,
+	"account_id": 31401902,
+	"custom_fields_values": [
+		{
+			"field_id": 1208779,
+			"field_name": "Телефон",
+			"field_code": "PHONE",
+			"field_type": "multitext",
+			"values": [
+				{
+					"value": "74951059440",
+					"enum_id": 724937,
+					"enum_code": "WORK"
+				}
+			]
+		},
+		{
+			"field_id": 1208781,
+			"field_name": "Email",
+			"field_code": "EMAIL",
+			"field_type": "multitext",
+			"values": [
+				{
+					"value": "Buh5@holidaymax.ru",
+					"enum_id": 724949,
+					"enum_code": "WORK"
+				}
+			]
+		},
+		{
+			"field_id": 1349715,
+			"field_name": "Отдел",
+			"field_type": "text",
+			"values": [
+				{
+					"value": "Бухгалтерия"
+				}
+			]
+		}
+	],
+	"_embedded": {
+		"companies": [
+			{
+				"id": 13613101,
+				"_embedded": {
+					"id": 0
+				},
+				"_links": {
+					"self": {
+						"href": "https://zabroniryi.amocrm.ru/api/v4/companies/13613101?limit=250\u0026page=2"
+					}
+				}
+			}
+		]
+	},
+	"_links": {
+		"self": {
+			"href": "https://zabroniryi.amocrm.ru/api/v4/contacts/13613415?limit=250\u0026page=2"
+		}
+	}
+}
