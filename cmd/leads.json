@@ -1,0 +1,661 @@
+[
+	{
+		"id": 12971831,
+		"name": "Космос Санкт-Петербург Невский",
+		"status_id": 142,
+		"pipeline_id": 7466710,
+		"created_by": 10327922,
+		"updated_by": 10327922,
+		"closed_at": 1705904611,
+		"created_at": 1705904611,
+		"updated_at": 1705905062,
+		"responsible_user_id": 10327922,
+		"custom_fields_values": [
+			{
+				"field_id": 1519511,
+				"field_name": "Тип аналитики",
+				"field_type": "select",
+				"values": [
+					{
+						"value": "Рентабельность SW сент-окт 2023",
+						"enum_id": 981066
+					}
+				]
+			}
+		],
+		"metadata": {
+			"client": {},
+			"origin": {}
+		},
+		"_embedded": {
+			"companies": [
+				{
+					"id": 19744247,
+					"_embedded": {
+						"id": 0
+					},
+					"_links": {
+						"self": {
+							"href": "https://zabroniryi.amocrm.ru/api/v4/companies/19744247?limit=10\u0026page=1"
+						}
+					}
+				}
+			]
+		},
+		"_links": {
+			"self": {
+				"href": "https://zabroniryi.amocrm.ru/api/v4/leads/12971831?limit=10\u0026page=1"
+			}
+		}
+	},
+	{
+		"id": 10090256,
+		"name": "Хэмптон бай Хилтон Нижний Новгород",
+		"status_id": 142,
+		"pipeline_id": 7466710,
+		"created_by": 10327922,
+		"updated_by": 10327922,
+		"closed_at": 1704960710,
+		"created_at": 1701842134,
+		"updated_at": 1705998648,
+		"responsible_user_id": 10327922,
+		"custom_fields_values": [
+			{
+				"field_id": 1519511,
+				"field_name": "Тип аналитики",
+				"field_type": "select",
+				"values": [
+					{
+						"value": "Рентабельность SW сент-окт 2023",
+						"enum_id": 981066
+					}
+				]
+			},
+			{
+				"field_id": 1445917,
+				"field_name": "ID отеля",
+				"field_type": "text",
+				"values": [
+					{
+						"value": "10861"
+					}
+				]
+			}
+		],
+		"metadata": {
+			"client": {},
+			"origin": {}
+		},
+		"_embedded": {
+			"tags": [
+				{
+					"id": 124074,
+					"name": "импорт_06122023_0854"
+				},
+				{
+					"id": 124556,
+					"name": "740977"
+				}
+			],
+			"companies": [
+				{
+					"id": 13589659,
+					"_embedded": {
+						"id": 0
+					},
+					"_links": {
+						"self": {
+							"href": "https://zabroniryi.amocrm.ru/api/v4/companies/13589659?limit=10\u0026page=1"
+						}
+					}
+				}
+			]
+		},
+		"_links": {
+			"self": {
+				"href": "https://zabroniryi.amocrm.ru/api/v4/leads/10090256?limit=10\u0026page=1"
+			}
+		}
+	},
+	{
+		"id": 10224498,
+		"name": "Ибис Казань, Казань",
+		"status_id": 142,
+		"pipeline_id": 7466710,
+		"created_by": 10327922,
+		"updated_by": 10327922,
+		"closed_at": 1702288388,
+		"created_at": 1701924542,
+		"updated_at": 1705998648,
+		"responsible_user_id": 10327922,
+		"custom_fields_values": [
+			{
+				"field_id": 1445917,
+				"field_name": "ID отеля",
+				"field_type": "text",
+				"values": [
+					{
+						"value": "2882"
+					}
+				]
+			},
+			{
+				"field_id": 1519511,
+				"field_name": "Тип аналитики",
+				"field_type": "select",
+				"values": [
+					{
+						"value": "Рентабельность SW сент-окт 2023",
+						"enum_id": 981066
+					}
+				]
+			},
+			{
+				"field_id": 1519579,
+				"field_name": "% комиссии/скидки",
+				"field_type": "text",
+				"values": [
+					{
+						"value": "3"
+					}
+				]
+			}
+		],
+		"metadata": {
+			"client": {},
+			"origin": {}
+		},
+		"_embedded": {
+			"tags": [
+				{
+					"id": 125640,
+					"name": "импорт_07122023_0746"
+				}
+			],
+			"companies": [
+				{
+					"id": 13564623,
+					"_embedded": {
+						"id": 0
+					},
+					"_links": {
+						"self": {
+							"href": "https://zabroniryi.amocrm.ru/api/v4/companies/13564623?limit=10\u0026page=1"
+						}
+					}
+				}
+			]
+		},
+		"_links": {
+			"self": {
+				"href": "https://zabroniryi.amocrm.ru/api/v4/leads/10224498?limit=10\u0026page=1"
+			}
+		}
+	},
+	{
+		"id": 10224778,
+		"name": "Домина Отель Новосибирск, Новосибирск",
+		"status_id": 142,
+		"pipeline_id": 7466710,
+		"created_by": 10327922,
+		"updated_by": 10327922,
+		"closed_at": 1703482835,
+		"created_at": 1701924610,
+		"updated_at": 1705998648,
+		"responsible_user_id": 10327922,
+		"custom_fields_values": [
+			{
+				"field_id": 1445917,
+				"field_name": "ID отеля",
+				"field_type": "text",
+				"values": [
+					{
+						"value": "10809"
+					}
+				]
+			},
+			{
+				"field_id": 1519511,
+				"field_name": "Тип аналитики",
+				"field_type": "select",
+				"values": [
+					{
+						"value": "Рентабельность SW сент-окт 2023",
+						"enum_id": 981066
+					}
+				]
+			}
+		],
+		"metadata": {
+			"client": {},
+			"origin": {}
+		},
+		"_embedded": {
+			"tags": [
+				{
+					"id": 125640,
+					"name": "импорт_07122023_0746"
+				},
+				{
+					"id": 132665,
+					"name": "+"
+				}
+			],
+			"companies": [
+				{
+					"id": 13590061,
+					"_embedded": {
+						"id": 0
+					},
+					"_links": {
+						"self": {
+							"href": "https://zabroniryi.amocrm.ru/api/v4/companies/13590061?limit=10\u0026page=1"
+						}
+					}
+				}
+			]
+		},
+		"_links": {
+			"self": {
+				"href": "https://zabroniryi.amocrm.ru/api/v4/leads/10224778?limit=10\u0026page=1"
+			}
+		}
+	},
+	{
+		"id": 10224792,
+		"name": "Небо, Исаково (деревня)",
+		"status_id": 142,
+		"pipeline_id": 7466710,
+		"created_by": 10327922,
+		"updated_by": 10327922,
+		"closed_at": 1703671684,
+		"created_at": 1701924612,
+		"updated_at": 1705998648,
+		"responsible_user_id": 10327922,
+		"custom_fields_values": [
+			{
+				"field_id": 1445917,
+				"field_name": "ID отеля",
+				"field_type": "text",
+				"values": [
+					{
+						"value": "15763"
+					}
+				]
+			},
+			{
+				"field_id": 1519511,
+				"field_name": "Тип аналитики",
+				"field_type": "select",
+				"values": [
+					{
+						"value": "Рентабельность SW сент-окт 2023",
+						"enum_id": 981066
+					}
+				]
+			},
+			{
+				"field_id": 1519579,
+				"field_name": "% комиссии/скидки",
+				"field_type": "text",
+				"values": [
+					{
+						"value": "3"
+					}
+				]
+			}
+		],
+		"metadata": {
+			"client": {},
+			"origin": {}
+		},
+		"_embedded": {
+			"tags": [
+				{
+					"id": 125640,
+					"name": "импорт_07122023_0746"
+				},
+				{
+					"id": 132665,
+					"name": "+"
+				}
+			],
+			"companies": [
+				{
+					"id": 13589043,
+					"_embedded": {
+						"id": 0
+					},
+					"_links": {
+						"self": {
+							"href": "https://zabroniryi.amocrm.ru/api/v4/companies/13589043?limit=10\u0026page=1"
+						}
+					}
+				}
+			]
+		},
+		"_links": {
+			"self": {
+				"href": "https://zabroniryi.amocrm.ru/api/v4/leads/10224792?limit=10\u0026page=1"
+			}
+		}
+	},
+	{
+		"id": 10224840,
+		"name": "Арсеньев, Петропавловск-Камчатский",
+		"status_id": 142,
+		"pipeline_id": 7466710,
+		"created_by": 10327922,
+		"updated_by": 10327922,
+		"closed_at": 1703671614,
+		"created_at": 1701924636,
+		"updated_at": 1705998648,
+		"responsible_user_id": 10327922,
+		"custom_fields_values": [
+			{
+				"field_id": 1445917,
+				"field_name": "ID отеля",
+				"field_type": "text",
+				"values": [
+					{
+						"value": "16064"
+					}
+				]
+			},
+			{
+				"field_id": 1519511,
+				"field_name": "Тип аналитики",
+				"field_type": "select",
+				"values": [
+					{
+						"value": "Рентабельность SW сент-окт 2023",
+						"enum_id": 981066
+					}
+				]
+			},
+			{
+				"field_id": 1519579,
+				"field_name": "% комиссии/скидки",
+				"field_type": "text",
+				"values": [
+					{
+						"value": "2"
+					}
+				]
+			}
+		],
+		"metadata": {
+			"client": {},
+			"origin": {}
+		},
+		"_embedded": {
+			"tags": [
+				{
+					"id": 125640,
+					"name": "импорт_07122023_0746"
+				},
+				{
+					"id": 132665,
+					"name": "+"
+				}
+			],
+			"companies": [
+				{
+					"id": 13587239,
+					"_embedded": {
+						"id": 0
+					},
+					"_links": {
+						"self": {
+							"href": "https://zabroniryi.amocrm.ru/api/v4/companies/13587239?limit=10\u0026page=1"
+						}
+					}
+				}
+			]
+		},
+		"_links": {
+			"self": {
+				"href": "https://zabroniryi.amocrm.ru/api/v4/leads/10224840?limit=10\u0026page=1"
+			}
+		}
+	},
+	{
+		"id": 10224944,
+		"name": "Новотель Владивосток, Владивосток",
+		"status_id": 142,
+		"pipeline_id": 7466710,
+		"created_by": 10327922,
+		"updated_by": 10327922,
+		"closed_at": 1704985600,
+		"created_at": 1701924644,
+		"updated_at": 1705998648,
+		"responsible_user_id": 10327922,
+		"custom_fields_values": [
+			{
+				"field_id": 1445917,
+				"field_name": "ID отеля",
+				"field_type": "text",
+				"values": [
+					{
+						"value": "27403"
+					}
+				]
+			},
+			{
+				"field_id": 1519511,
+				"field_name": "Тип аналитики",
+				"field_type": "select",
+				"values": [
+					{
+						"value": "Рентабельность SW сент-окт 2023",
+						"enum_id": 981066
+					}
+				]
+			}
+		],
+		"metadata": {
+			"client": {},
+			"origin": {}
+		},
+		"_embedded": {
+			"tags": [
+				{
+					"id": 125640,
+					"name": "импорт_07122023_0746"
+				}
+			],
+			"companies": [
+				{
+					"id": 13581775,
+					"_embedded": {
+						"id": 0
+					},
+					"_links": {
+						"self": {
+							"href": "https://zabroniryi.amocrm.ru/api/v4/companies/13581775?limit=10\u0026page=1"
+						}
+					}
+				}
+			]
+		},
+		"_links": {
+			"self": {
+				"href": "https://zabroniryi.amocrm.ru/api/v4/leads/10224944?limit=10\u0026page=1"
+			}
+		}
+	},
+	{
+		"id": 12971411,
+		"name": "Отель Новотель Москва Аэропорт Шереметьево",
+		"status_id": 142,
+		"pipeline_id": 7466710,
+		"updated_by": 10280294,
+		"closed_at": 1705989812,
+		"created_at": 1705904326,
+		"updated_at": 1705998648,
+		"responsible_user_id": 10327922,
+		"custom_fields_values": [
+			{
+				"field_id": 1445917,
+				"field_name": "ID отеля",
+				"field_type": "text",
+				"values": [
+					{
+						"value": "410992"
+					}
+				]
+			},
+			{
+				"field_id": 1519511,
+				"field_name": "Тип аналитики",
+				"field_type": "select",
+				"values": [
+					{
+						"value": "Рентабельность SW сент-окт 2023",
+						"enum_id": 981066
+					}
+				]
+			}
+		],
+		"metadata": {
+			"client": {},
+			"origin": {}
+		},
+		"_embedded": {
+			"companies": [
+				{
+					"id": 19744261,
+					"_embedded": {
+						"id": 0
+					},
+					"_links": {
+						"self": {
+							"href": "https://zabroniryi.amocrm.ru/api/v4/companies/19744261?limit=10\u0026page=1"
+						}
+					}
+				}
+			]
+		},
+		"_links": {
+			"self": {
+				"href": "https://zabroniryi.amocrm.ru/api/v4/leads/12971411?limit=10\u0026page=1"
+			}
+		}
+	},
+	{
+		"id": 12971463,
+		"name": "Маринс Гранд Отель Астрахань",
+		"status_id": 142,
+		"pipeline_id": 7466710,
+		"updated_by": 10280294,
+		"closed_at": 1705989812,
+		"created_at": 1705904328,
+		"updated_at": 1705998648,
+		"responsible_user_id": 10327922,
+		"custom_fields_values": [
+			{
+				"field_id": 1445917,
+				"field_name": "ID отеля",
+				"field_type": "text",
+				"values": [
+					{
+						"value": "740417"
+					}
+				]
+			},
+			{
+				"field_id": 1519511,
+				"field_name": "Тип аналитики",
+				"field_type": "select",
+				"values": [
+					{
+						"value": "Рентабельность SW сент-окт 2023",
+						"enum_id": 981066
+					}
+				]
+			}
+		],
+		"metadata": {
+			"client": {},
+			"origin": {}
+		},
+		"_embedded": {
+			"companies": [
+				{
+					"id": 19744265,
+					"_embedded": {
+						"id": 0
+					},
+					"_links": {
+						"self": {
+							"href": "https://zabroniryi.amocrm.ru/api/v4/companies/19744265?limit=10\u0026page=1"
+						}
+					}
+				}
+			]
+		},
+		"_links": {
+			"self": {
+				"href": "https://zabroniryi.amocrm.ru/api/v4/leads/12971463?limit=10\u0026page=1"
+			}
+		}
+	},
+	{
+		"id": 12971471,
+		"name": "Хэмптон бай Хилтон Воронеж",
+		"status_id": 142,
+		"pipeline_id": 7466710,
+		"updated_by": 10280294,
+		"closed_at": 1705989812,
+		"created_at": 1705904330,
+		"updated_at": 1705998648,
+		"responsible_user_id": 10327922,
+		"custom_fields_values": [
+			{
+				"field_id": 1445917,
+				"field_name": "ID отеля",
+				"field_type": "text",
+				"values": [
+					{
+						"value": "274822"
+					}
+				]
+			},
+			{
+				"field_id": 1519511,
+				"field_name": "Тип аналитики",
+				"field_type": "select",
+				"values": [
+					{
+						"value": "Рентабельность SW сент-окт 2023",
+						"enum_id": 981066
+					}
+				]
+			}
+		],
+		"metadata": {
+			"client": {},
+			"origin": {}
+		},
+		"_embedded": {
+			"companies": [
+				{
+					"id": 19744255,
+					"_embedded": {
+						"id": 0
+					},
+					"_links": {
+						"self": {
+							"href": "https://zabroniryi.amocrm.ru/api/v4/companies/19744255?limit=10\u0026page=1"
+						}
+					}
+				}
+			]
+		},
+		"_links": {
+			"self": {
+				"href": "https://zabroniryi.amocrm.ru/api/v4/leads/12971471?limit=10\u0026page=1"
+			}
+		}
+	}
+]
