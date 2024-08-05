@@ -36,7 +36,7 @@ func (c *Get) GetContactsByCustomFields(phone string, email string, params *Para
 		out = options.Out.(*models.RequestResponse).Embedded.Contacts
 		for _, value := range out {
 			for _, item := range value.CustomFieldsValues {
-				if (item.FieldCode == "PHONE" && regex.ReplaceAllString(item.Values[0].Value, "") == phone) ||
+				if (item.FieldCode == "PHONE" && regex.ReplaceAllString(item.Values[0].Value.(string), "") == phone) ||
 					(item.FieldCode == "EMAIL" && item.Values[0].Value == email) {
 					return true, value, nil
 				}

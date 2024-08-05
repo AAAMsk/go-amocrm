@@ -36,7 +36,7 @@ func (c *Get) GetCompaniesByCustomFields(phone string, email string, params *Par
 		out = options.Out.(*models.RequestResponse).Embedded.Companies
 		for _, value := range out {
 			for _, item := range value.CustomFieldsValues {
-				if (item.FieldCode == "PHONE" && regex.ReplaceAllString(item.Values[0].Value, "") == phone) ||
+				if (item.FieldCode == "PHONE" && regex.ReplaceAllString(item.Values[0].Value.(string), "") == phone) ||
 					(item.FieldCode == "EMAIL" && item.Values[0].Value == email) {
 					return true, value, nil
 				}
