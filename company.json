@@ -1,13 +1,11 @@
 {
-	"id": 13613415,
-	"name": "Валентина Ступенькова",
-	"first_name": "Валентина",
-	"last_name": "Ступенькова",
-	"group_id": 504854,
-	"responsible_user_id": 10280294,
-	"created_at": 1700640727,
-	"updated_at": 1700640729,
-	"account_id": 31401902,
+	"id": 13586483,
+	"name": "\"Селена-ЛИЦ\"",
+	"responsible_user_id": 9720549,
+	"created_by": 9720549,
+	"updated_by": 9720549,
+	"created_at": 1700638921,
+	"updated_at": 1700638921,
 	"custom_fields_values": [
 		{
 			"field_id": 1208779,
@@ -16,7 +14,7 @@
 			"field_type": "multitext",
 			"values": [
 				{
-					"value": "74951059440",
+					"value": "77395224375",
 					"enum_id": 724937,
 					"enum_code": "WORK"
 				}
@@ -29,41 +27,50 @@
 			"field_type": "multitext",
 			"values": [
 				{
-					"value": "Buh5@holidaymax.ru",
+					"value": "selenaselena@yandex.ru",
 					"enum_id": 724949,
 					"enum_code": "WORK"
 				}
 			]
 		},
 		{
-			"field_id": 1349715,
-			"field_name": "Отдел",
+			"field_id": 1208785,
+			"field_name": "Адрес",
+			"field_code": "ADDRESS",
+			"field_type": "textarea",
+			"values": [
+				{
+					"value": "664003, РФ, Иркутская область, г.Иркутск ул.Ленина, д.21"
+				}
+			]
+		},
+		{
+			"field_id": 1236685,
+			"field_name": "ИНН",
 			"field_type": "text",
 			"values": [
 				{
-					"value": "Бухгалтерия"
+					"value": "3808139104"
+				}
+			]
+		},
+		{
+			"field_id": 1452949,
+			"field_name": "Форма собственности",
+			"field_type": "text",
+			"values": [
+				{
+					"value": "ООО"
 				}
 			]
 		}
 	],
 	"_embedded": {
-		"companies": [
-			{
-				"id": 13613101,
-				"_embedded": {
-					"id": 0
-				},
-				"_links": {
-					"self": {
-						"href": "https://zabroniryi.amocrm.ru/api/v4/companies/13613101?limit=250\u0026page=2"
-					}
-				}
-			}
-		]
+		"id": 0
 	},
 	"_links": {
 		"self": {
-			"href": "https://zabroniryi.amocrm.ru/api/v4/contacts/13613415?limit=250\u0026page=2"
+			"href": "https://zabroniryi.amocrm.ru/api/v4/companies/13586483?query=selenaselena%40yandex.ru\u0026page=1\u0026limit=250"
 		}
 	}
 }

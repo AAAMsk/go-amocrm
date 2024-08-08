@@ -19,9 +19,9 @@ type CustomFields struct {
 }
 
 type CustomFieldsValues struct {
-	Value    string `json:"value,omitempty"`
-	EnumID   int    `json:"enum_id,omitempty"`
-	EnumCode string `json:"enum_code,omitempty"`
+	Value    interface{} `json:"value,omitempty"`
+	EnumID   int         `json:"enum_id,omitempty"`
+	EnumCode string      `json:"enum_code,omitempty"`
 }
 
 type RequestResponse struct {
