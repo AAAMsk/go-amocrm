@@ -1,0 +1,76 @@
+{
+	"id": 13586483,
+	"name": "\"Селена-ЛИЦ\"",
+	"responsible_user_id": 9720549,
+	"created_by": 9720549,
+	"updated_by": 9720549,
+	"created_at": 1700638921,
+	"updated_at": 1700638921,
+	"custom_fields_values": [
+		{
+			"field_id": 1208779,
+			"field_name": "Телефон",
+			"field_code": "PHONE",
+			"field_type": "multitext",
+			"values": [
+				{
+					"value": "77395224375",
+					"enum_id": 724937,
+					"enum_code": "WORK"
+				}
+			]
+		},
+		{
+			"field_id": 1208781,
+			"field_name": "Email",
+			"field_code": "EMAIL",
+			"field_type": "multitext",
+			"values": [
+				{
+					"value": "selenaselena@yandex.ru",
+					"enum_id": 724949,
+					"enum_code": "WORK"
+				}
+			]
+		},
+		{
+			"field_id": 1208785,
+			"field_name": "Адрес",
+			"field_code": "ADDRESS",
+			"field_type": "textarea",
+			"values": [
+				{
+					"value": "664003, РФ, Иркутская область, г.Иркутск ул.Ленина, д.21"
+				}
+			]
+		},
+		{
+			"field_id": 1236685,
+			"field_name": "ИНН",
+			"field_type": "text",
+			"values": [
+				{
+					"value": "3808139104"
+				}
+			]
+		},
+		{
+			"field_id": 1452949,
+			"field_name": "Форма собственности",
+			"field_type": "text",
+			"values": [
+				{
+					"value": "ООО"
+				}
+			]
+		}
+	],
+	"_embedded": {
+		"id": 0
+	},
+	"_links": {
+		"self": {
+			"href": "https://zabroniryi.amocrm.ru/api/v4/companies/13586483?query=selenaselena%40yandex.ru\u0026page=1\u0026limit=250"
+		}
+	}
+}

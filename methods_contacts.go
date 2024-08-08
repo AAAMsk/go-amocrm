@@ -3,46 +3,65 @@ package amocrm
 import (
 	"github.com/AAAMsk/go-amocrm/models"
 	"github.com/gofiber/fiber/v2"
-	"log"
 	"regexp"
-	"strconv"
 )
 
-func (c *Get) GetContactsByCustomFields(phone string, email string, params *Params) (isFind bool, contact models.Contact, err error) {
+func (c *Get) GetContactsByCustomFields(queryParams []string) (isFind bool, contact models.Contact, err error) {
 	c.api.log("GetContactsByCustomFields request is started...")
 
 	var out []models.Contact
-	regex := regexp.MustCompile("^(\\+)|[^\\d\\n]")
-	i := 1
+	var p = Params{}
+
 	options := makeRequestOptions{
 		Method:  fiber.MethodGet,
 		BaseURL: contactsURL,
 		In:      nil,
 		Out:     &models.RequestResponse{},
-		Params:  params,
+		Params:  &p,
 	}
 
-	for {
-		options.Params.Page = strconv.Itoa(i)
-
+	regex := regexp.MustCompile("^(\\+)|[^\\d\\n]")
+	isFind = false
+	i := 0
+	for _, param := range queryParams {
+		options.Params.Query = param
 		if err = c.api.makeRequest(options); err != nil {
 			if err.Error() == "No content" {
-				break
+				continue
 			}
-			log.Println(err)
-			return
+			return false, contact, err
 		}
 
 		out = options.Out.(*models.RequestResponse).Embedded.Contacts
-		for _, value := range out {
-			for _, item := range value.CustomFieldsValues {
-				if (item.FieldCode == "PHONE" && regex.ReplaceAllString(item.Values[0].Value.(string), "") == phone) ||
-					(item.FieldCode == "EMAIL" && item.Values[0].Value == email) {
-					return true, value, nil
+		if len(out) > 1 {
+			for _, value := range out {
+				for _, item := range value.CustomFieldsValues {
+					if i == 0 {
+						if item.FieldCode == "EMAIL" {
+							if len(queryParams) > 1 && item.Values[0].Value == queryParams[1] {
+								return true, value, nil
+							} else {
+								return true, out[0], nil
+							}
+						} else {
+							continue
+						}
+					} else if i == 1 {
+						if item.FieldCode == "PHONE" {
+							if regex.ReplaceAllString(item.Values[0].Value.(string), "") == queryParams[0] {
+								return true, value, nil
+							} else {
+								return true, out[0], nil
+							}
+						} else {
+							continue
+						}
+					}
 				}
 			}
+		} else {
+			return true, out[0], nil
 		}
-
 		i++
 	}
 	return false, contact, nil
