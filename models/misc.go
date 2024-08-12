@@ -33,6 +33,8 @@ type RequestResponse struct {
 		Companies      []Company        `json:"companies,omitempty"`
 		Leads          []Lead           `json:"leads,omitempty"`
 		Users          []User           `json:"users,omitempty"`
+		Notes          []Note           `json:"notes,omitempty"`
+		Tasks          []Task           `json:"tasks,omitempty"`
 		PipelineStatus []PipelineStatus `json:"statuses,omitempty"`
 		Tags           []Tag            `json:"tags,omitempty"`
 		Unsorted       []Unsorted       `json:"unsorted,omitempty"`

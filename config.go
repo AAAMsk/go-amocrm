@@ -44,6 +44,8 @@ const (
 const (
 	tagsURL  = "/tags"
 	linksURL = "/links"
+	notesURL = "/notes"
+	tasksURL = "/tasks"
 )
 
 // Customers Constants
