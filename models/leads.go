@@ -50,14 +50,6 @@ type LeadEmbedded struct {
 	Contacts  []Contact `json:"contacts,omitempty"`
 }
 
-type LeadComplexResponse struct {
-	ID        int      `json:"id,omitempty"`
-	ContactID int      `json:"contact_id,omitempty"`
-	CompanyID int      `json:"company_id,omitempty"`
-	RequestID []string `json:"request_id,omitempty"`
-	Merged    bool     `json:"merged,omitempty"`
-}
-
 type LeadModifyResponse struct {
 	ID        int `json:"id,omitempty"`
 	UpdatedAt int `json:"updated_at,omitempty"`
