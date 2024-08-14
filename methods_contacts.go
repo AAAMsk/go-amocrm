@@ -10,7 +10,13 @@ func (c *Get) GetContactsByCustomFields(queryParams []string) (isFind bool, cont
 	c.api.log("GetContactsByCustomFields request is started...")
 
 	var out []models.Contact
-	var p = Params{}
+	w := With{
+		Leads:     true,
+		Companies: true,
+	}
+	var p = Params{
+		With: w,
+	}
 
 	options := makeRequestOptions{
 		Method:  fiber.MethodGet,
