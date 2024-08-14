@@ -31,6 +31,7 @@ type SetMain struct {
 
 type ContactEmbedded struct {
 	Tags            []Tag             `json:"tags,omitempty"`
+	Leads           []Lead            `json:"leads,omitempty"`
 	Companies       []Company         `json:"companies,omitempty"`
 	CatalogElements []CatalogElements `json:"catalog_elements,omitempty"`
 }

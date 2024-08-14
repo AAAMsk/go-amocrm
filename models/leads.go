@@ -32,10 +32,10 @@ type Lead struct {
 	// заданным для данной сделки. Поле не является обязательным.
 	CustomFieldsValues []CustomFields `json:"custom_fields_values,omitempty"`
 	// Metadata - данные о контакте
-	Metadata LeadMD `json:"metadata,omitempty"`
+	Metadata *LeadMD `json:"metadata,omitempty"`
 	// Данные вложенных сущностей, при создании и редактировании можно
 	// передать только теги. Поле не является обязательным
-	Embedded LeadEmbedded `json:"_embedded,omitempty"`
+	Embedded *LeadEmbedded `json:"_embedded,omitempty"`
 	// Links - это ссылка на сделку
 	Links struct {
 		Self struct {
