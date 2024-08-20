@@ -8,11 +8,6 @@ import (
 func (c *Create) Task(task []models.Task) (out models.RequestResponse, err error) {
 	c.api.log("CreateTag request started...")
 
-	//if task.EntityId == "" {
-	//	err = fiber.ErrBadRequest
-	//	return
-	//}
-
 	options := makeRequestOptions{
 		Method:  fiber.MethodPost,
 		BaseURL: noEntityURL + tasksURL,

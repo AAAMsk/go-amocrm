@@ -42,10 +42,11 @@ const (
 
 // EntityConstants
 const (
-	tagsURL  = "/tags"
-	linksURL = "/links"
-	notesURL = "/notes"
-	tasksURL = "/tasks"
+	tagsURL         = "/tags"
+	linksURL        = "/links"
+	notesURL        = "/notes"
+	tasksURL        = "/tasks"
+	customFieldsURL = "/custom_fields"
 )
 
 // Customers Constants
