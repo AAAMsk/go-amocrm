@@ -29,6 +29,7 @@ type RequestResponse struct {
 	Page       int           `json:"_page,omitempty"`
 	Links      *LinkResponse `json:"_links,omitempty"`
 	Embedded   struct {
+		CustomsFields  []CustomsFields  `json:"custom_fields,omitempty"`
 		Contacts       []Contact        `json:"contacts,omitempty"`
 		Companies      []Company        `json:"companies,omitempty"`
 		Leads          []Lead           `json:"leads,omitempty"`

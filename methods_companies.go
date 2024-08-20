@@ -6,6 +6,24 @@ import (
 	"regexp"
 )
 
+func (c *Get) GetCompanyCustomFields(params *Params) (out models.RequestResponse, err error) {
+	c.api.log("GetCompanyCustomFields request is started...")
+
+	options := makeRequestOptions{
+		Method:  fiber.MethodGet,
+		BaseURL: companiesURL + customFieldsURL,
+		In:      nil,
+		Out:     &out,
+		Params:  params,
+	}
+	if err = c.api.makeRequest(options); err != nil {
+		return
+	}
+
+	c.api.log("returning the struct...")
+	return
+}
+
 func (c *Get) GetCompaniesByCustomFields(queryParams []string) (isFind bool, company models.Company, err error) {
 	c.api.log("GetCompaniesByCustomFields request is started...")
 
