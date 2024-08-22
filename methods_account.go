@@ -1,18 +1,13 @@
 package amocrm
 
 import (
-	"fmt"
 	"github.com/gofiber/fiber/v2"
 	"log"
 )
 
 func (c *Create) TokenUPD(oAuth *OAuth) (t *Tokens, err error) {
 	c.api.log("Refresh Token Updater is entered...")
-	//a, req := api.getAgent(fiber.MethodPost, accessTokenURL, nil)
 
-	fmt.Printf("%+v\n", oAuth)
-
-	//t := Tokens{}
 	options := makeRequestOptions{
 		Method:  fiber.MethodPost,
 		BaseURL: accessTokenURL,
@@ -23,7 +18,7 @@ func (c *Create) TokenUPD(oAuth *OAuth) (t *Tokens, err error) {
 
 	errs := c.api.makeRequest(options)
 	if errs != nil {
-		return nil, fmt.Errorf("few errors: %v", errs)
+		return nil, errs
 	}
 
 	c.api.log("Refresh Token updated...")
