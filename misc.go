@@ -96,7 +96,6 @@ func marshal(data interface{}, req *fiber.Request) (*fiber.Request, error) {
 		return req, err
 	}
 
-	log.Println(data)
 	req.SetBody(m)
 	return req, nil
 }
@@ -188,10 +187,10 @@ func isParams(req *fiber.Request, domain string, parameter string, params *Param
 	}
 
 	if params.Filter != nil {
-        for key, value := range params.Filter {
-            q.Set("filter["+key+"]", value)
-        }
-    }
+		for key, value := range params.Filter {
+			q.Set("filter["+key+"]", value)
+		}
+	}
 
 	u.RawQuery = q.Encode()
 	req.SetRequestURI(u.String())
